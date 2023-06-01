@@ -9,7 +9,7 @@ import { getLangsFrom } from "../../utils/getLangs";
 
 function RepositoriesPage() {
   const [currentLanguage, setCurrentLanguage] = useState("");
-
+  
   const user = {
     login: "WRSG-Goncalves",
     name: "Wilson Gonçalves",
@@ -100,14 +100,11 @@ function RepositoriesPage() {
     }
   ];
 
- 
-
-  useEffect(() => {    
+  useEffect(() => {        
     if (currentLanguage === undefined || currentLanguage === "" ) {      
       setCurrentLanguage(undefined);    
-    }
-    
-  });
+    }      
+  },[]);
 
   const languages = getLangsFrom(repositories);
 
