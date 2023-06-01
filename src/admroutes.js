@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const MainPage = lazy(() => import('./pages/MainPage'));
 const RepositoriesPage = lazy(() => import('./pages/Repositories/RepositoriesPage'));
 
-export default function AppRoutes() {
+export default function RoutesAdm() {
   return (
     <Router>
       <Suspense fallback={<div>Carregando...</div>}>

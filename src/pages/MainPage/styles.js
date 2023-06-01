@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   text-align: center;
   min-height: 100vh;
-  padding: 0 2rem;  
+  padding: 0 2rem;
 `;
 
 export const Logo = styled.img`
