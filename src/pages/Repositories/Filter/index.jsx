@@ -8,7 +8,7 @@ function Filter({ languages, currentLanguage, onClick }) {
       key={name.toLowerCase()}
       color={color}
       className={currentLanguage === name ? 'selected' : ''}
-      onClick={() => onClick && onClick(name)}
+      onClick={() =>onClick && onClick(name)}
     >
       <span>{name}</span>
       <span>{count}</span>
@@ -18,7 +18,7 @@ function Filter({ languages, currentLanguage, onClick }) {
   return (
     <Container>
       {selectors}
-      <Cleaner onClick={() => onClick && onClick(undefined)}>Limpar</Cleaner>
+      <Cleaner onClick={() =>onClick && onClick(undefined)}>Limpar</Cleaner>
     </Container>
   );
 }

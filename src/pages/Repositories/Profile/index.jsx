@@ -6,7 +6,7 @@ import { MdGroup, MdLocationCity, MdWork, MdLink } from "react-icons/md";
 import { Container, Header, Avatar, Login, Name, Inner, Data } from "./styles";
 
 function Profile({ user }) {
-  return (
+  return (    
     <Container>
       <Header>
         <Avatar src={user.avatar_url} />

@@ -4,6 +4,7 @@ import Repository from "../Repository";
 import { Container } from "./styles";
 
 function Repositories({ repositories, currentLanguage }) {
+  
   const repos = repositories
     .filter(
       (repository) =>
@@ -12,7 +13,7 @@ function Repositories({ repositories, currentLanguage }) {
     .map((repository) => (
       <Repository key={repository.id} repository={repository} />
     ));
-
+    
   return <Container>{repos}</Container>;
 }
 
