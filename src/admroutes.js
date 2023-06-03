@@ -10,7 +10,7 @@ export default function RoutesAdm() {
       <Suspense fallback={<div>Carregando...</div>}>
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/repositories" element={<RepositoriesPage />} />
+          <Route path="/:login/repositories" element={<RepositoriesPage />} />
         </Routes>
       </Suspense>
     </Router>
